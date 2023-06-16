@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+
+/* ---drop Containers-- */
+.container {
+  width: min(1200px, 100%);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.box {
+  border: 1px dashed gray;
+  width: 100%;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1/1;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
